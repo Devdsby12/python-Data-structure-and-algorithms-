@@ -3,11 +3,11 @@ class Solution:
             
         count = []
         for i in range(len(s)) :
-            dictt = set()
+            dictt = set()  # we can also use other data types here instead of set but set is fast for lookups
             counting = 0
             for j in s[i:] :
                 if j not in dictt :
-                    dictt.add(j)
+                    dictt.add(j)  
                     counting += 1
                 else :
                     break
